@@ -1,6 +1,3 @@
-import linecache
-
-
 print('hello world!')
 print('wow i finally did it')
 # you will not believe how hard it was to install python
