@@ -27,7 +27,6 @@ while (num < 100) {
 function chessboard(size) {
 
 let lineCount = 0;
-
 charOne = "#";
 charTwo = " ";
 sequenceOne = charOne + charTwo
@@ -62,7 +61,7 @@ while (lineCount < size) {
 }
 }
 
-chessboard(10)
+chessboard(12)
 
 
 
