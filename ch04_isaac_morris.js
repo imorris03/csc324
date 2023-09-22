@@ -32,11 +32,8 @@ console.log(sum(range(1, 10)))
 
 var reverseArray = function(ray) {
     let idk = [];
-    // chatgpt helped me figure out to set a new array^
-    // not entirely sure why it wouldnt work otherwise.
     for (let i = 0; i < ray.length; i++) {
         idk.unshift(ray[i]);
-        // before using chatgpt i had .push and .shift
     }
     console.log(idk)
 }
