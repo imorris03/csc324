@@ -20,7 +20,7 @@ class Group {
   static from(obj) {
     // chat GPT recommended static so .from could work
     for (let i of obj) {
-      this.group.add(i);
+      group.add(i);
     }
   }
 

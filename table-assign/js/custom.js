@@ -1,8 +1,6 @@
-/********************************************************************
- * 
- * Your introductory remarks go here.
- * 
- *******************************************************************/
+// Making A Table Assignment
+// isaac morris
+
 
  // The array of objects, one object for each artist.
  
@@ -34,4 +32,19 @@
   }
  ]
 
- // complete with code to select and populate the table
+ const tableDiv = document.querySelector("#bhangra");
+
+ let songStuff = "";
+ artists.forEach(function (artist) {
+   songStuff += "<tr>";
+   songStuff += `<td>${artist.name}</td>`;
+   songStuff += `<td>${artist.birthYear}</td>`;
+   songStuff += `<td><a href="${artist.link}" target="_blank">Watch</a></td>`;
+   songStuff += "</tr>";
+   // chat gpt helped organize this code
+   // before, i was mixing up tr's and td's
+ });
+songStuff = songStuff + "</tr>";
+
+tableDiv.innerHTML = songStuff;
+
