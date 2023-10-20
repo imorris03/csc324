@@ -71,6 +71,31 @@ isEven(44)
 isEven(-10)
 // -> ??
 
+// revised solution
+// this other method accepts negative numbers
+
+function isEven (x) {
+    if (x == 1) {return false;} 
+    else if (x == 0) {return true;}
+    else if (x === undefined) {
+      return "Please give a real number."}
+    else {
+      if (x < 0) {return isEven(x + 2)}
+      else return isEven(x - 2);
+    }
+  }
+  
+  console.log(isEven());
+  // -> 'Please give a real number.'
+  console.log(isEven(75));
+  // -> false
+  console.log(isEven(102));
+  // -> true
+  console.log(isEven(-14));
+  // -> true
+  console.log(isEven(-73));
+  // -> false
+
 // #3 Bean Counting
 countBs = function(string) {
     let counter = 0;

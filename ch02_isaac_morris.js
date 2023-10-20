@@ -108,8 +108,3 @@ credit to scaler.com for teaching
 me how to select last character 
 with .endsWith()
 */
-
-
-
-
-
